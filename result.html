@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clustering Results</title>
+    <style>
+        body {
+            font-family: 'Times', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000306;
+            text-align: center;
+            color: #ecf0f1;
+
+        }
+
+        h1 {
+            font-size: 55px;
+            margin-bottom: 60px;
+            margin-top: 40px;
+            color: #ecf0f1;
+        }
+
+        img {
+            display: inline-flex;
+            width: 29em;
+            margin: 17px 11px;
+            height: 30em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Clustering Results</h1>
+
+    <img src="{{ url_for('static', filename='ClusterId_Amount.png') }}" alt="Amount Image">
+    <img src="{{ url_for('static', filename='ClusterId_Frequency.png') }}" alt="Frequency Image">
+    <img src="{{ url_for('static', filename='ClusterId_Recency.png') }}" alt="Recency Image">
+</body>
+
+</html>
